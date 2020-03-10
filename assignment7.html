@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Square game</title>
+  <script type="text/javascript" src="game.js"></script>
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <link rel="stylesheet" type="text/css" href="game.css" />
+</head>
+
+<body>
+  <!-- these codes were adapted from https://courses.cs.washington.edu/courses/cse154/17sp/lecture/more-dom/code/squares.html  -->
+  <nav class="nav fixed-top nav-fixed">
+    <a class="nav-link active" href="index.html">Anu Wat</a>
+    <a class="nav-link" href="project.html">My project</a>
+    <a class="nav-link disabled" href="assignment4.html">Gluten</a>
+    <a class="nav-link disabled" href="assignment_5.html">Blog</a>
+    <a class="nav-link disabled" href="register.html">Register&Login</a>
+    <a class="nav-link disabled" href="assignment7.html">Square game</a>
+  </nav>
+  <div class="mb-4"><br></div>
+  <div class="container pt-5">
+    <fieldset>
+      <legend>Control</legend>
+      Number of box:
+      <input type="text" name="numbox" id="numbox" />
+      <select name="color" id="color">
+        <option value="red">Red</option>
+        <option value="blue">Blue</option>
+        <option value="green">Green</option>
+      </select>
+      <button id="start">Start</button>
+      <div id="timerClock">
+        Timer:
+        <div id="clock"></div>
+      </div>
+    </fieldset>
+
+    <div id="squares-container">
+      <div id="squares-layer"></div>
+    </div>
+  </div>
+</body>
+
+</html>

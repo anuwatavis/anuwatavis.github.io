@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset='utf-8'>
+	<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+	<title>Page Title</title>
+	<meta name='viewport' content='width=device-width, initial-scale=1'>
+	<link rel="stylesheet" href="./css/bootstrap.min.css">
+	<link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+	<link rel="stylesheet" href="style.css">
+	<script src='register.js'></script>
+</head>
+
+<body>
+	<nav class="nav fixed-top nav-fixed ">
+		<a class="nav-link active" href="index.html">Anu Wat</a>
+		<a class="nav-link " href="project.html">My project</a>
+		<a class="nav-link disabled" href="assignment4.html">Gluten</a>
+		<a class="nav-link disabled" href="assignment_5.html">Blog</a>
+		<a class="nav-link disabled" href="register.html">Register&Login</a>
+		<a class="nav-link disabled" href="assignment7.html">Square game</a>
+	</nav>
+	<div class="mt-5"><br></div>
+	<div class="container">
+		<form name="myForm" id="myForm" action="login.html" class="pt-5">
+			<fieldset>
+				<img src="" alt="">
+				<a href="htttps"></a>
+				<legend>Register</legend>
+				<span>* require</span> <br>
+				<span id="errormsg"></span> <br>
+				First name*:
+				<input type="text" name="firstname" required>
+				Last name*:
+				<input type="text" name="lastname" required>
+				<br>
+				Gender*:
+				<input type="radio" name="gender" value="male">Male
+				<input type="radio" name="gender" value="female">Female
+				<input type="radio" name="gender" value="other">Other
+				<br>
+				Birthday*:
+				<input type="date" name="bday" value="" required>
+				<br>
+				Email address*:
+				<input type="email" name="email" required>
+				<br>
+				Username*:
+				<input type="text" name="username" required>
+				<br>
+				Password*:
+				<input id="password" type="password" name="password" required>
+				<br>
+				Retype Password*:
+				<input id="repassword" type="password" name="repassword" required>
+				<br>
+				<input id="submitButton" type="submit" value="Register">
+				<input type="reset" value="Reset">
+				<spand id="password-invalid">password invalid</spand>
+			</fieldset>
+		</form>
+	</div>
+
+</body>
+
+</html>

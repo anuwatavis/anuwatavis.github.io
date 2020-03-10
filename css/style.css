@@ -1,0 +1,223 @@
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  font-family: 'Raleway', sans-serif;
+}
+
+.fixed-top {
+  background-color: #FFFFFF;
+}
+
+.section {
+  height: 100vh;
+}
+
+.intro-1 {
+  background-color: #eceff1;
+  height: 100vh;
+}
+
+.intro-2 {
+  background-color: #CFD8DC;
+  height: 100vh;
+}
+
+.inside {
+  height: 100vh;
+}
+
+.inside a {
+  font-size: 3rem;
+}
+
+.heading-wrapper {
+  border-radius: 5px;
+  margin-bottom: 50px;
+  max-width: 300px;
+  background: #CFD8DC;
+}
+
+.text-3rem {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #263238;
+}
+
+.text-2rem {
+  font-size: 2rem;
+}
+
+/* my skill */
+.heading {
+  content: '';
+  height: 10px;
+  width: 7%;
+  border-radius: 5px;
+  margin: 0 auto 20px;
+  display: block;
+  background: #90A4AE;
+}
+
+
+@keyframes glowing {
+  0% {
+    background-color: #CFD8DC;
+    box-shadow: 0 0 5px #CFD8DC;
+  }
+
+  50% {
+    background-color: #CFD8DC;
+    box-shadow: 0 0 10px #CFD8DC;
+  }
+
+  100% {
+    background-color: #CFD8DC;
+    box-shadow: 0 0 5px #CFD8DC;
+  }
+}
+
+.heading {
+  animation: glowing 1300ms infinite;
+}
+
+
+
+
+
+.skill-1 {
+  background-color: #B0BEC5;
+  height: 100vh;
+}
+
+.skill-2 {
+  background-color: #CFD8DC;
+  height: 100vh;
+}
+
+.subtext-1 {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+/*about me*/
+
+.about-me {
+  background-color: #ECEFF1;
+  height: 100vh;
+}
+
+/* ---------------------------------
+7. EDUCATION SECTION
+--------------------------------- */
+
+.education-wrapper {
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+}
+
+.education-wrapper:after {
+  content: '';
+  position: absolute;
+  top: 8px;
+  bottom: 0;
+  left: 50%;
+  margin-left: -1px;
+  width: 2px;
+  background: #ccc;
+}
+
+.education-wrapper .education {
+  width: 50%;
+  clear: both;
+  position: relative;
+  margin-top: 30px;
+}
+
+.education-wrapper .education:first-child {
+  margin-top: 0;
+}
+
+.education-wrapper .education.left {
+  float: left;
+  padding-right: 50px;
+  text-align: right;
+}
+
+.education-wrapper .education.right {
+  float: right;
+  padding-left: 50px;
+  text-align: left;
+}
+
+.education-wrapper .education:after {
+  content: '';
+  position: absolute;
+  top: 8px;
+  width: 16px;
+  height: 16px;
+  border-radius: 10px;
+  z-index: 1;
+  box-shadow: 0 0 0 8px rgba(255, 171, 0, .4);
+  background: #FFAB00;
+}
+
+.education-wrapper .education.left:after {
+  right: -8px;
+}
+
+.education-wrapper .education.right:after {
+  left: -8px;
+}
+
+.footer {
+  background-color: #CFD8DC;
+  color: #263238;
+}
+
+.project-section {
+  background-color: #263238;
+  height: 40vh;
+  color: #ECEFF1;
+}
+
+.tracking-in-expand {
+  -webkit-animation: tracking-in-expand 1s cubic-bezier(0.550, 0.085, 0.680, 0.530);
+  animation: tracking-in-expand 1s cubic-bezier(0.550, 0.085, 0.680, 0.530);
+}
+
+@-webkit-keyframes tracking-in-expand {
+  0% {
+    letter-spacing: -0.5em;
+    opacity: 0;
+  }
+
+  40% {
+    opacity: 0.6;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes tracking-in-expand {
+  0% {
+    letter-spacing: -0.5em;
+    opacity: 0;
+  }
+
+  40% {
+    opacity: 0.6;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.large-text {
+  font-size: 3rem;
+}
